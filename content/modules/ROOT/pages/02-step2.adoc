@@ -1,0 +1,22 @@
+To support the web application deployed on this machine, install ruby
+version 3.0.
+
+[source,bash,run]
+----
+dnf -y install ruby
+----
+
+After the installation is complete, verify that ruby version 3.0 is
+installed on the system.
+
+[source,bash,run]
+----
+dnf list ruby
+----
+
+Finally, run the ruby command to inspect the version it reports.
+
+[source,bash,run]
+----
+ruby --version
+----

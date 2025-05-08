@@ -1,0 +1,36 @@
+An update to the web application running on this system requires
+features available in ruby 3.1. To accomplish this you will ultimately
+remove ruby 3.0 and install ruby 3.1.
+
+To start, how do you know that ruby 3.1 is availble? Additional software
+for Red Hat Enterprise Linux is shipped as an Application Stream.
+Application Streams take several different forms, but ruby is packaged
+and shipped as a module.
+
+List the available ruby modules.
+
+[source,bash,run]
+----
+dnf module list ruby
+----
+
+From the above output, you can see that ruby 3.1 is available and can be
+installed on the system.
+
+In order to upgrade the system, first remove ruby 3.0.
+
+[source,bash,run]
+----
+dnf -y remove ruby
+----
+
+Take a look at the machine to validate the removal of ruby 3.0.
+
+[source,bash,run]
+----
+dnf list ruby
+----
+
+Previously, the dnf list showed ruby in the `+Installed Packages+`. Now
+that it has been removed from the system, it is listed in the
+`+Available Packages+`.

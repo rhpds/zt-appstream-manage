@@ -1,0 +1,22 @@
+Now that the ruby 3.1 is installed, you can also look at how the modular
+package management is reported by `+dnf+`.
+
+[source,bash,run]
+----
+dnf module list ruby
+----
+
+From the above output, you can see that ruby 3.1 is the enabled `+[e]+`
+module and that it is installed `+[i]+` on the system.
+
+As Red Hat releases updated application streams, you will use a similar
+process of removing the installed application stream and installing a
+newer one.
+
+To see the full list of available modular packaged application streams
+an their versions available for your system:
+
+[source,bash,run]
+----
+dnf module list
+----
