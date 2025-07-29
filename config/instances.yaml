@@ -2,6 +2,7 @@
 virtualmachines:
   - name: "rhel"
     image: "rhel-9.5"
+    bootloader: efi
     memory: "2G"
     cores: 1
     image_size: "40G"
@@ -10,3 +11,18 @@ virtualmachines:
         value: "bastions"
     networks:
       - default
+    packages:
+      - cockpit
+
+
+#virtualmachines:
+#  - name: "rhel"
+#    image: "rhel-9.5"
+#    memory: "2G"
+#    cores: 1
+#    image_size: "40G"
+#    tags:
+#      - key: "AnsibleGroup"
+#        value: "bastions"
+#    networks:
+#      - default
