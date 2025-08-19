@@ -1,8 +1,13 @@
 virtualmachines:
   - name: "rhel"
-    image: "rhel-9.5"
-    memory: "2G"
+    image: "rhel-9.6"
+    memory: "4G"
     cores: 1
+    tags:
+      - key: "AnsibleGroup"
+        value: "bastions"
+    networks:
+      - default
 
 #virtualmachines:
 #  - name: "rhel"
