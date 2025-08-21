@@ -13,7 +13,7 @@ ruby 3.1 on the system:
 
 [source,bash,run]
 ----
-dnf -y module install ruby:3.1
+sudo dnf -y module install ruby:3.1
 ----
 
 You can verify that ruby 3.1 is now available on the system by checking
@@ -21,5 +21,5 @@ the version reported by ruby:
 
 [source,bash,run]
 ----
-ruby --version
+sudo ruby --version
 ----
