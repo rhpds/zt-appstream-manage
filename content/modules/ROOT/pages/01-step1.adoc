@@ -3,7 +3,7 @@ distribution.
 
 [source,bash,run]
 ----
-dnf list ruby
+sudo dnf list ruby
 ----
 
 Generally, the version of software provided with the base RHEL 9
