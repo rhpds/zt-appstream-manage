@@ -3,7 +3,7 @@ package management is reported by `+dnf+`.
 
 [source,bash,run]
 ----
-dnf module list ruby
+sudo dnf module list ruby
 ----
 
 From the above output, you can see that ruby 3.1 is the enabled `+[e]+`
@@ -18,5 +18,5 @@ an their versions available for your system:
 
 [source,bash,run]
 ----
-dnf module list
+sudo dnf module list
 ----
