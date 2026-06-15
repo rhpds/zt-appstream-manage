@@ -1,7 +1,8 @@
 virtualmachines:
   - name: "rhel"
     image: "rhel-10-2-eus-06-08-26"
-    memory: "4G"
+    bootloader: efi
+    memory: "8G"
     cores: 1
     image_size: "40G"
     packages:
