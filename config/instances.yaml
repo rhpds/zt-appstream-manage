@@ -5,9 +5,9 @@ virtualmachines:
     cores: 1
     image_size: "40G"
     register_satellite: false
-    packages:
-      - tree
-      - tmux
+    # packages:
+    # - tree
+    # - tmux
     tags:
       - key: "AnsibleGroup"
         value: "bastions"
